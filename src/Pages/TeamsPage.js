@@ -22,6 +22,7 @@ import axios from "axios";
 import User from "../Assets/user.svg";
 import anupam_img from '../Assets/anupam.jpeg';
 import kshitij_img from '../Assets/kshitij.jpg';
+import team_dp from '../Assets/teamdp.gif';
 
 const imgSrc =
     "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg/1200px-Elon_Musk_Royal_Society_%28crop2%29.jpg";
@@ -30,9 +31,28 @@ const TeamsPage = () => {
     const [team, setTeam] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
 
-    const tempTeam = [
+    const founders = [
         { name: 'Anupam Yadav', img: anupam_img, job_title: 'Co-founder & CEO', about: '', linkedin: "https://www.linkedin.com/in/anupamyadav/" },
         { name: 'Kshitij Sharma', img: kshitij_img, job_title: 'Co-founder & CTO', about: '', linkedin: "https://www.linkedin.com/in/sharmakshitij/" }
+    ];
+
+    const teamTemp = [
+        { name: 'Manish Gusain', img: team_dp, job_title: 'Full Stack Engineer', about: '', linkedin: "https://www.linkedin.com/in/anupamyadav/" },
+        { name: 'Siddharth Taparia', img: team_dp, job_title: '', about: '', linkedin: "https://www.linkedin.com/in/sharmakshitij/" },
+        { name: 'Shahabaz', img: team_dp, job_title: 'Full Stack Engineer', about: '', linkedin: "https://www.linkedin.com/in/sharmakshitij/" },
+        { name: 'Shameem Lukman', img: team_dp, job_title: 'Full Stack Engineer', about: '', linkedin: "https://www.linkedin.com/in/sharmakshitij/" },
+        { name: 'Prateek Yadav', img: team_dp, job_title: 'Full Stack Engineer', about: '', linkedin: "https://www.linkedin.com/in/sharmakshitij/" },
+        { name: 'Samad', img: team_dp, job_title: 'Full Stack Engineer', about: '', linkedin: "https://www.linkedin.com/in/sharmakshitij/" },
+        { name: 'Rutvij Patel', img: team_dp, job_title: 'Full Stack Engineer', about: '', linkedin: "https://www.linkedin.com/in/sharmakshitij/" },
+        { name: 'Rishabh Ahuja', img: team_dp, job_title: 'Full Stack Engineer', about: '', linkedin: "https://www.linkedin.com/in/sharmakshitij/" },
+        { name: 'Gaurav Parashar', img: team_dp, job_title: '', about: '', linkedin: "https://www.linkedin.com/in/sharmakshitij/" },
+        { name: 'Ashutosh', img: team_dp, job_title: '', about: '', linkedin: "https://www.linkedin.com/in/sharmakshitij/" },
+        { name: 'Gaurav Agarwal', img: team_dp, job_title: '', about: '', linkedin: "https://www.linkedin.com/in/sharmakshitij/" },
+        { name: 'Yogesh', img: team_dp, job_title: '', about: '', linkedin: "https://www.linkedin.com/in/sharmakshitij/" },
+        { name: 'Sanjay', img: team_dp, job_title: '', about: '', linkedin: "https://www.linkedin.com/in/sharmakshitij/" },
+        { name: 'Anjali Pathak', img: team_dp, job_title: '', about: '', linkedin: "https://www.linkedin.com/in/sharmakshitij/" },
+        { name: 'Kanupriya', img: team_dp, job_title: '', about: '', linkedin: "https://www.linkedin.com/in/sharmakshitij/" },
+        { name: 'Shiraj', img: team_dp, job_title: '', about: '', linkedin: "https://www.linkedin.com/in/sharmakshitij/" },
     ];
 
     const getImage = async (key) => {
@@ -60,8 +80,8 @@ const TeamsPage = () => {
     };
 
     useEffect(() => {
-        window.scrollTo(0,0);
-        
+        window.scrollTo(0, 0);
+
         const fetchData = async () => {
             const { data } = await getAllUsersData();
             console.log(data?.data)
@@ -109,14 +129,13 @@ const TeamsPage = () => {
             <>
                 <Container style={{ marginTop: '2em' }}>
                     <Row style={{ display: "flex", justifyContent: "center", margin: '1em 0' }}>
-
                         <span style={{ display: "contents" }} className="founder-span">
                             Meet Our Founders
                         </span>
                     </Row>
-                    <Row style={{ justifyContent: "center", gap: '40px' }}>
 
-                        {tempTeam.map((val, ind) => {
+                    <Row style={{ justifyContent: "center", gap: '40px' }}>
+                        {founders.map((val, ind) => {
                             return (
                                 <Col className=" about-card mt-3" md={4} lg={3} sm={6} xs={12} key={ind}>
                                     <div class="Card border-light mb-3" style={{ width: "220px" }}>
@@ -144,12 +163,48 @@ const TeamsPage = () => {
                                 </Col>
                             )
                         })}
+                    </Row>
+                </Container>
 
-
-
+                {/* <Container style={{ marginTop: '6em' }}>
+                    <Row style={{ display: "flex", justifyContent: "center", margin: '1em 0' }}>
+                        <span style={{ display: "contents" }} className="founder-span">
+                            Our Team
+                        </span>
                     </Row>
 
-                </Container>
+                    <Row style={{ justifyContent: "center", gap: '40px' }}>
+                        {teamTemp.map((val, ind) => {
+                            return (
+                                <Col className=" about-card mt-3" md={4} lg={3} sm={6} xs={12} key={ind}>
+                                    <div class="Card border-light mb-3" style={{ width: "220px" }}>
+                                        <img
+                                            className="img-round card-img-top"
+                                            src={val.img || User}
+                                            style={{ borderRadius: "182px", height: "218px", objectFit: 'contain' }}
+                                            alt="..."
+                                        />
+                                        <div className="card-body">
+                                            <div className="details">
+                                                <p className="name">
+                                                    {val.name}
+                                                    <a href={val.linkedin} target='_blank' style={{ cursor: "pointer" }}>
+                                                        <LinkedInIcon className={"icon"} />
+                                                    </a>
+                                                </p>
+                                                <p>{val.job_title}</p>
+                                                <p>
+                                                    {val.about}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </Col>
+                            )
+                        })}
+                    </Row>
+                </Container> */}
+
                 {/* <Container style={{ marginTop: '4em' }}>
                         <h3 className="mx-auto text-center meet">Meet Our Team Members</h3>
                     </Container>

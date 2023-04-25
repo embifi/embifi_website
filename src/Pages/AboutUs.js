@@ -81,7 +81,7 @@ const AboutUs = () => {
             <PlainHeader />
             <div className="privacy-head-div">
                 <Container gap={3}>
-                    <p className="privacy-heading-about-us underline">ABOUT US</p>
+                    <p className="privacy-heading-about-us">About Us</p>
                     {/* <span className="about-us-subtitle">We are a startup in "the" embedded finance space. </span> */}
                     <br />
                     <br />

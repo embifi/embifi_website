@@ -89,7 +89,7 @@ function Header() {
                 navigate('/why-us')
               }
             >
-              Why us
+              Why Us
             </li>
             <li
               className={`pointer`}
