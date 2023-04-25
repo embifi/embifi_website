@@ -1,0 +1,265 @@
+.intro-sec-title {
+    font-size: 2.3em;
+}
+
+.intro-sec-subtitle {
+    font-size: 2em;
+}
+
+.intro-bg-img {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.intro_row {
+    background-color: #1A4B7E;
+    background-image: linear-gradient(to bottom right,
+            #1A4B7E, #6CB3FC);
+}
+
+.s-block {
+    background-color: #054c76;
+    color: #fff;
+    padding: 0.2em 0.5em;
+    border-radius: 5px;
+    display: inline-block;
+    width: 8em;
+}
+
+.s-block-img {
+    width: 10em;
+    margin-top: -4em;
+}
+
+#container2 {
+    display: none;
+}
+
+/* services animation start */
+#container {
+    --n: 5;
+    /* number of item */
+    --d: 30s;
+    /* duration */
+
+    width: 200px;
+    height: 200px;
+    margin: 12em auto;
+    margin-bottom: 1em;
+    /* border: 1px solid #000; */
+    display: grid;
+    /* grid-template-columns: 30px; */
+    /* grid-template-rows: 30px; */
+    justify-items: center;
+    /* align-items: center; */
+    /* background-color: pink; */
+
+    place-content: center;
+    /* border-radius: 50%; */
+}
+
+.s-block-item {
+    grid-area: 1/1;
+    /* line-height: 30px; */
+    text-align: center;
+    border-radius: 50%;
+    animation: spin var(--d) linear infinite;
+    transform: rotate(0) translate(200px) rotate(0);
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(1turn) translate(200px) rotate(-1turn);
+    }
+}
+
+.s-block-item:nth-child(1) {
+    animation-delay: calc(-0*var(--d)/var(--n))
+}
+
+.s-block-item:nth-child(2) {
+    animation-delay: calc(-1*var(--d)/var(--n))
+}
+
+.s-block-item:nth-child(3) {
+    animation-delay: calc(-2*var(--d)/var(--n))
+}
+
+.s-block-item:nth-child(4) {
+    animation-delay: calc(-3*var(--d)/var(--n))
+}
+
+.s-block-item:nth-child(5) {
+    animation-delay: calc(-4*var(--d)/var(--n))
+}
+
+/* services animation end */
+
+
+
+@media only screen and (max-width: 668px) {
+    #container {
+        display: none;
+    }
+
+    #container2 {
+        margin-top: 6em;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .s-block2 {
+        background-color: #054c76;
+        color: #fff;
+        padding: 0.2em 0.5em;
+        border-radius: 5px;
+        display: inline-block;
+        width: 10em;
+    }
+
+    .s-block-img2 {
+        width: 10em;
+        margin-top: -4em;
+    }
+
+    #container2>div {
+        margin-bottom: 2em;
+    }
+
+
+
+
+    /* new services */
+    .services-sec {
+        display: none !important;
+    }
+
+    .services-sec2 {
+        display: block !important;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+/* new services */
+.services-sec {
+    height: 30em;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 20% 1fr;
+}
+
+.ss-box-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-self: flex-end;
+}
+
+.ss-box-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ss-box-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-self: flex-start;
+}
+
+.feature-label {
+    background-color: #3871ac;
+    padding: 1em 2em;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.services-sec>div>p {
+    margin-bottom: 3em;
+    width: 100%;
+    text-align: center;
+}
+
+.ba-img {
+    width: 15em;
+    height: 10em;
+    margin-top: -1em;
+}
+
+/* new services end */
+
+
+/* new services 2 start */
+.services-sec2 {
+    display: none;
+}
+
+.services-sec2>div>p {
+    margin-bottom: 3em;
+    width: 60%;
+    text-align: center;
+}
+
+.feature-label-2 {
+    background-color: #3871ac;
+    padding: 1em 2em;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.services-sec2>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ba-img-2 {
+    height: 10em;
+    margin-top: -1em;
+    margin-bottom: 2em;
+}
+
+/* new services 2 end */
+
+
+.floating {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 15px);
+    }
+
+    100% {
+        transform: translate(0, -0px);
+    }
+}
+
+.underline {
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    text-decoration-thickness: 1px;
+}

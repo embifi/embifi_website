@@ -1,0 +1,163 @@
+.main-cont {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.details-cont {
+    width: 35%;
+    height: 65%;
+    margin: 20px;
+}
+
+.welcome-font {
+    color: white;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 55px;
+    display: flex;
+    align-items: center;
+}
+
+.btn-logout {
+    background: linear-gradient(108.46deg, rgba(255, 255, 255, 0.5) 57.47%, rgba(0, 0, 0, 0.1) 157.47%);
+    backdrop-filter: blur(1.5px);
+    height: 60px;
+    width: 100%;
+    color: white;
+    border-radius: 7px;
+}
+
+.card {
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    background: rgb(255 255 255 / 13%) 77.47%;
+    backdrop-filter: blur(1.5px);
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+}
+
+.logo-img {
+    display: none;
+}
+
+.details-card {
+    width: 100%;
+    height: 35%;
+    margin-bottom: 20px;
+    background: rgb(255 255 255 / 13%) 77.47%;
+    backdrop-filter: blur(1.5px);
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: row;
+}
+
+.card-details-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    height: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.span-1 {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+}
+
+.span-2 {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: rgba(125, 125, 125, 0.75);
+}
+
+.span-3 {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 20px;
+    display: flex;
+    color: #BDBDBD;
+}
+
+.card-details-right {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.img-detail {
+    width: 90px;
+    height: 90px;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: aliceblue;
+}
+
+@media screen and (max-width: 1000px) {
+    .details-cont {
+        width: 50%;
+        height: 65%;
+        margin: 20px;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .logo-img {
+        display: flex;
+    }
+
+    .welcome-font {
+        color: white;
+        font-family: 'Plus Jakarta Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.6rem;
+        line-height: 55px;
+        display: flex;
+        align-items: center;
+    }
+
+    .details-cont {
+        width: 90%;
+    }
+
+    .span-3 {
+        font-size: 0.8rem;
+    }
+
+}
