@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/embifi_website/static/css/main.27b16580.css",
+    "main.js": "/embifi_website/static/js/main.ad3eab57.js",
+    "static/media/products.svg": "/embifi_website/static/media/products.53eaa457f30645e5f5d985746760a81e.svg",
+    "static/media/aboutus-img-1.svg": "/embifi_website/static/media/aboutus-img-1.21d32545cca8d2ecaa5c6b95cb78a92e.svg",
+    "static/media/aboutus-img-3.svg": "/embifi_website/static/media/aboutus-img-3.c79b9d68c4a7d9a18e6dfc7bdd07ea97.svg",
+    "static/media/aboutus-img-4.svg": "/embifi_website/static/media/aboutus-img-4.c4ed9895acd9435dd8a06ef3be6565f6.svg",
+    "static/media/box.svg": "/embifi_website/static/media/box.1a2d880cf45055df8b38c033f2562935.svg",
+    "static/media/Man-1.svg": "/embifi_website/static/media/Man-1.5b9387c8153ee608efa87d8afc770245.svg",
+    "static/media/aboutus-img-2.svg": "/embifi_website/static/media/aboutus-img-2.d6e39e4bfc71f82488cec6d58519f3a1.svg",
+    "static/media/Man-2.svg": "/embifi_website/static/media/Man-2.2bab944862c0c2aa8158c88c9c518271.svg",
+    "static/media/teamdp.gif": "/embifi_website/static/media/teamdp.6fd67720a47384f68d3c.gif",
+    "static/media/credit.gif": "/embifi_website/static/media/credit.4de8f02a492636ab971f.gif",
+    "static/media/loginsideimg.jpg": "/embifi_website/static/media/loginsideimg.7cfce53aa568ba0118ff.jpg",
+    "static/media/intro-bg.svg": "/embifi_website/static/media/intro-bg.33c39cdee08c85f906f35c36e3bc125e.svg",
+    "static/media/anupam.jpeg": "/embifi_website/static/media/anupam.284f891ad116ed8cbccb.jpeg",
+    "static/media/kshitij.jpg": "/embifi_website/static/media/kshitij.f7b2d7bc600789903717.jpg",
+    "static/media/ny.png": "/embifi_website/static/media/ny.621ee871e34327326f0b.png",
+    "static/media/svgexport-4.svg": "/embifi_website/static/media/svgexport-4.6fc893166428e111d5d402add1afd5bf.svg",
+    "static/media/svgexport-3.svg": "/embifi_website/static/media/svgexport-3.bb91d7093e14f65de763aee1e2a6b8dc.svg",
+    "static/media/ba-icon.svg": "/embifi_website/static/media/ba-icon.c73761705c7bd75d8887f03e8d349eab.svg",
+    "static/media/svgexport-2.svg": "/embifi_website/static/media/svgexport-2.e1b0e3d49cc6f404696676eeaf4ee106.svg",
+    "static/media/vani.png": "/embifi_website/static/media/vani.bc409beb4d6db591ae88.png",
+    "index.html": "/embifi_website/index.html",
+    "static/media/Avatar.svg": "/embifi_website/static/media/Avatar.de7d896764ff4e99625930bd6d435b58.svg",
+    "static/media/user.svg": "/embifi_website/static/media/user.81fbbe39e1e80c69b9548d931637bd8c.svg",
+    "main.27b16580.css.map": "/embifi_website/static/css/main.27b16580.css.map",
+    "main.ad3eab57.js.map": "/embifi_website/static/js/main.ad3eab57.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.27b16580.css",
+    "static/js/main.ad3eab57.js"
+  ]
+}
