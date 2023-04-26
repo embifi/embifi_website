@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { GlobalInfo } from '../context/GlobalContext'
 import bn from '../Assets/ba-icon.svg';
+import "./Services.css";
 
 function Services() {
 
@@ -60,20 +61,26 @@ function Services() {
 
       <div className='services-sec'>
 
-        <div className='ss-box-1'>
+        {/* <div className='ss-box-1'>
           <p className='feature-label floating'>Loan Application</p>
           <p className='feature-label floating'>KYC Module</p>
           <p className='feature-label floating'>Loan Processing</p>
-        </div>
+        </div> */}
 
-        <div className='ss-box-2'>
+        {/* <div className='ss-box-2'>
           <img src={bn} className='ba-img' />
-        </div>
+        </div> */}
 
-        <div className='ss-box-3'>
+        {/* <div className='ss-box-3'>
           <p className='feature-label floating'>Collections</p>
           <p className='feature-label floating'>Underwriting</p>
           <p className='feature-label floating'>And much more</p>
+        </div> */}
+
+        <div className='service-orbit'>
+        <p className='feature-label '>Loan Application</p>
+          <p className='feature-label '>KYC Module</p>
+          <p className='feature-label '>Loan Processing</p>
         </div>
 
       </div>
