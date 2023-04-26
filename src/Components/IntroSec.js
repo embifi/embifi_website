@@ -4,7 +4,8 @@ import { Button } from "@mui/material";
 import Zoom from "react-reveal/Zoom";
 import Typewriter from "typewriter-effect";
 import { GlobalInfo } from "../context/GlobalContext";
-import intro_bg from '../Assets/intro-bg.svg';
+import intro_bg from "../Assets/intro-bg.svg";
+import "./IntroSec.css";
 
 function IntroSec() {
   const { home, services, whyUs, contactUs, quote } = useContext(GlobalInfo);
@@ -51,86 +52,41 @@ function IntroSec() {
 
   return (
     <>
-      <section className="intro-sec section-1 intro_row" ref={home}>
-        <img src={intro_bg} className='intro-bg-img' />
-        <Container className="w-100">
-          <Row className="text-center">
-            <Col md={12}>
-              <div className="text-center">
-                <p className="intro-sec-title">Embedding Finance in EV for a Better Tomorrow! </p>
-                <p className="intro-sec-subtitle">
-                  <Typewriter
-                    onInit={(typewriter) => {
-                      typewriter
-                        .typeString("EV Financing, Checkout Financing, Payments")
-                        .changeDelay(75)
-                        .start();
-                    }}
-                  />
-                </p>
-              </div>
-              <Button
-                className="intro-btn ms-0 mt-4"
-                variant="outlined"
-                onClick={() =>
-                  quote.current?.scrollIntoView({ behavior: "smooth" })
-                }
-              >
-                Learn more
-              </Button>
-            </Col>
-            {/* <Col className="intro-img-col" md={4}>
-              <img
-                src="https://drilca9ckdzo8.cloudfront.net/fit-in/money.png"
-                width="100%"
-                className="vert-move intro-pic"
-                ref={introImg}
-                draggable={false}
-              />
-            </Col> */}
-          </Row>
-        </Container>
-        {/* <div
-          class="scroll-down"
-          style={
-            isScrollIcon
-              ? { opacity: 1, transition: "all 1s" }
-              : { opacity: 0, transition: "all 1s" }
-          }
-        /> */}
-      </section>
-
-      {/* <section className="intro-sec bg-dark section-2">
-        <Container>
-          <Row>
-            <Col xs={{ span: 12, order: 2 }} md={{ span: 6, order: 1 }}>
-              <div className="embi-logo">
-                <img src="https://drilca9ckdzo8.cloudfront.net/embi.svg" alt="" />
-              </div>
-              <Zoom>
-                <p className="text-center mt-3">
-                  <span className="mx-3">BUILD</span>|
-                  <span className="mx-3">ENABLE</span>|
-                  <span className="mx-3">EMBED</span>
-                </p>
-              </Zoom>
-            </Col>
-            <Col
-              className="intro-img-col"
-              xs={{ span: 12, order: 1 }}
-              md={{ span: 6, order: 2 }}
+      <section className="Section-1">
+        <img src={intro_bg} className="intro-bg-img" />
+        <div className="landing-page">
+          <div className="floating-bg"></div>
+          <div className="text-center">
+            <p className="intro-sec-title">
+              Embedding Finance in EV for a Better Tomorrow!{" "}
+            </p>
+            <h1 className="intro-sec-subtitle">
+              <span className="heading-1">Ev Financing</span>
+              <span className="heading-2">Checkout Financing</span>
+              <span className="heading-3">Payment</span>
+            </h1>
+            <Button
+              className="intro-btn ms-0 mt-4 banner-btn"
+              variant="outlined"
+              onClick={() =>
+                quote.current?.scrollIntoView({ behavior: "smooth" })
+              }
             >
-              <img
-                src={"https://drilca9ckdzo8.cloudfront.net/hand.svg"}
-                width="100%"
-                className="vert-move intro-hand-pic"
-                ref={handImg}
-                draggable={false}
-              />
-            </Col>
-          </Row>
-        </Container>
-      </section> */}
+              Learn more
+            </Button>
+            {/* <button class="banner-btn">Learn More</button> */}
+          </div>
+          {/* <Button
+            className="intro-btn ms-0 mt-4"
+            variant="outlined"
+            onClick={() =>
+              quote.current?.scrollIntoView({ behavior: "smooth" })
+            }
+          >
+            Learn more
+          </Button> */}
+        </div>
+      </section>
     </>
   );
 }

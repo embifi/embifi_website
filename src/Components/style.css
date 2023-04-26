@@ -24,8 +24,10 @@
 }
 
 .navlinks .active {
-  border-bottom: 1.5px solid white;
-  padding-bottom: 5px;
+  background-color: #1CD69E;
+  padding: 0.2em 0.5em;
+  border-radius: 10px;
+  border-bottom: 2px solid #fff;
 }
 
 .navlinks ul {
