@@ -182,7 +182,8 @@
 }
 
 .feature-label {
-    background-color: #3871ac;
+    /* background-color: #3871ac; */
+    background-color: #1CD69E;
     padding: 1em 2em;
     border-radius: 10px;
     color: #fff;

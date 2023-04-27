@@ -69,7 +69,7 @@ function FooterComp({ goback }) {
                       navigate("/why-us");
                     }}
                   >
-                    Why us
+                    Why Us
                   </Link>
                 </li>
                 <li className="pointer">
@@ -78,7 +78,7 @@ function FooterComp({ goback }) {
                       navigate("/about-us");
                     }}
                   >
-                    About us
+                    About Us
                   </Link>
                 </li>
                 <li className="pointer">

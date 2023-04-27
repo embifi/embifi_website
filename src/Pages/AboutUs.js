@@ -204,7 +204,7 @@ const AboutUs = () => {
                     }}
                 >
                     <Col md={6} lg={6} sm={12} xs={12}>
-                        Our seamless digital process enables the consumers to escape long queues and ever lasting questioning to avail loans at their fingertips.
+                        Our seamless digital process enables the consumers to escape long queues and ever lasting queries to avail loans at their fingertips.
                     </Col>
                     <Col
                         style={{ display: "flex", justifyContent: "center" }}

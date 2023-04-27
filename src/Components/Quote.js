@@ -29,8 +29,8 @@ function Quote() {
               <h1 className={isAnimated ? "quote-child-0" : ''}>Why are we building Embifi ?</h1>
               {/* <p>We want to bring the power of Fintech to everyone to become a fintech company</p> */}
               <p className={isAnimated ? "quote-child-1" : ''}>Climate change is real and the time to take action is now!</p>
-              <p className={isAnimated ? "quote-child-2" : ''}>Some of the Potential Solutions</p>
-              <p className={isAnimated ? "quote-child-3" : ''}>EV and Reforestation are some of the potential solutions amongst many more...</p>
+              <p className={isAnimated ? "quote-child-2" : ''}>EV and Reforestation are some of the potential solutions amongst many more...</p>
+              {/* <p className={isAnimated ? "quote-child-3" : ''}></p> */}
             </div>
           </Col>
           {/* <Col className="quote-holder" md={6}>

@@ -27,11 +27,20 @@ function Header() {
     window.scrollY > 10 ? setnavSize("5rem") : setnavSize("10rem");
     window.scrollY > 10 ? setLogoSize("100px") : setLogoSize("170px");
     window.scrollY > 10 ? setLogo(logoNoTag) : setLogo(logoTag);
-    window.scrollY < 1800 && setActiveNav((prev) => ({ ...prev, services: false, whyUs: false, home: true }))
-    window.scrollY > 1800 && window.scrollY < 2800 && setActiveNav((prev) => ({ ...prev, services: true, whyUs: false, home: false }))
-    window.scrollY > 2800 && window.scrollY < 3900 && setActiveNav((prev) => ({ ...prev, services: false, whyUs: true, home: false }))
-    window.scrollY > 3900 && setActiveNav((prev) => ({ ...prev, services: false, whyUs: false, home: false }))
+
+    // window.scrollY < 1800 && setActiveNav((prev) => ({ ...prev, services: false, whyUs: false, home: true }))
+    // window.scrollY > 1800 && window.scrollY < 2800 && setActiveNav((prev) => ({ ...prev, services: true, whyUs: false, home: false }))
+    // window.scrollY > 2800 && window.scrollY < 3900 && setActiveNav((prev) => ({ ...prev, services: false, whyUs: true, home: false }))
+    // window.scrollY > 3900 && setActiveNav((prev) => ({ ...prev, services: false, whyUs: false, home: false }))
+
+    window.scrollY < 1000 && setActiveNav((prev) => ({ ...prev, services: false, whyUs: false, home: true, aboutus: false }))
+    window.scrollY > 535 && setActiveNav((prev) => ({ ...prev, services: true, whyUs: false, home: false, aboutus: false }))
+    window.scrollY > 1820 && window.scrollY < 2380 && setActiveNav((prev) => ({ ...prev, services: false, whyUs: true, home: false, aboutus: false }))
+    // window.scrollY > 2340 && window.scrollY < 2420 && setActiveNav((prev) => ({ ...prev, services: false, whyUs: false, home: false, aboutus: false }))
+    window.scrollY > 2470 && setActiveNav((prev) => ({ ...prev, services: false, whyUs: false, home: false, aboutus: false }))
   };
+
+  // console.log('hello scroll : ', window.scrollY)
 
   useEffect(() => {
     window.addEventListener("scroll", listenScrollEvent);
