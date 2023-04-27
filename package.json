@@ -1,6 +1,6 @@
 {
   "name": "embifi",
-  "homepage": "https://embifi.github.io/embifi_website",
+  "homepage": "https://embifi.github.io/embifiwebsite",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

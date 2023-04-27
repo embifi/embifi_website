@@ -1,7 +1,5 @@
-.service-orbit{
-    width: 25vw;
-    height: 25vw;
-    background-color: aqua;
-    border-radius: 50%;
-    border: 2px solid red;
-}
+.service-orbit {
+  width: 150px;
+  height: 150px;
+  background-color: aqua;
+}/*# sourceMappingURL=Services.css.map */
