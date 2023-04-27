@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.65c71bd4.css",
-    "main.js": "/static/js/main.09d09a4e.js",
+    "main.css": "/static/css/main.5ee32e9e.css",
+    "main.js": "/static/js/main.feda4d1d.js",
     "static/media/products.svg": "/static/media/products.32bbbc4c60591fb809570990e8ebccbe.svg",
     "static/media/aboutus-img-1.svg": "/static/media/aboutus-img-1.28b216816dde843adc5196843aeecb76.svg",
     "static/media/aboutus-img-3.svg": "/static/media/aboutus-img-3.9a9c1b1df3a4da5db0fa12fd3ff33367.svg",
@@ -10,6 +10,7 @@
     "static/media/Man-1.svg": "/static/media/Man-1.b689e3184601870ac80fb5f2425dca3a.svg",
     "static/media/aboutus-img-2.svg": "/static/media/aboutus-img-2.530e6f635db4e69f94a629db40eac7e8.svg",
     "static/media/Man-2.svg": "/static/media/Man-2.8b6cee87df13354ee503145937fa84f1.svg",
+    "static/media/teamdp.gif": "/static/media/teamdp.6fd67720a47384f68d3c.gif",
     "static/media/credit.gif": "/static/media/credit.4de8f02a492636ab971f.gif",
     "static/media/loginsideimg.jpg": "/static/media/loginsideimg.7cfce53aa568ba0118ff.jpg",
     "static/media/intro-bg.svg": "/static/media/intro-bg.f9a36f937943199d13a1f71bf25db7f6.svg",
@@ -24,11 +25,11 @@
     "index.html": "/index.html",
     "static/media/Avatar.svg": "/static/media/Avatar.5d1b4416937eaa6a07f67a1c8227ec24.svg",
     "static/media/user.svg": "/static/media/user.81fbbe39e1e80c69b9548d931637bd8c.svg",
-    "main.65c71bd4.css.map": "/static/css/main.65c71bd4.css.map",
-    "main.09d09a4e.js.map": "/static/js/main.09d09a4e.js.map"
+    "main.5ee32e9e.css.map": "/static/css/main.5ee32e9e.css.map",
+    "main.feda4d1d.js.map": "/static/js/main.feda4d1d.js.map"
   },
   "entrypoints": [
-    "static/css/main.65c71bd4.css",
-    "static/js/main.09d09a4e.js"
+    "static/css/main.5ee32e9e.css",
+    "static/js/main.feda4d1d.js"
   ]
 }
