@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/embifiwebsite/static/css/main.6e92e652.css",
-    "main.js": "/embifiwebsite/static/js/main.5cebc68c.js",
+    "main.css": "/embifiwebsite/static/css/main.c8644e57.css",
+    "main.js": "/embifiwebsite/static/js/main.87ff2c38.js",
     "static/media/products.svg": "/embifiwebsite/static/media/products.53eaa457f30645e5f5d985746760a81e.svg",
     "static/media/aboutus-img-1.svg": "/embifiwebsite/static/media/aboutus-img-1.21d32545cca8d2ecaa5c6b95cb78a92e.svg",
     "static/media/aboutus-img-3.svg": "/embifiwebsite/static/media/aboutus-img-3.c79b9d68c4a7d9a18e6dfc7bdd07ea97.svg",
@@ -25,11 +25,11 @@
     "index.html": "/embifiwebsite/index.html",
     "static/media/Avatar.svg": "/embifiwebsite/static/media/Avatar.de7d896764ff4e99625930bd6d435b58.svg",
     "static/media/user.svg": "/embifiwebsite/static/media/user.81fbbe39e1e80c69b9548d931637bd8c.svg",
-    "main.6e92e652.css.map": "/embifiwebsite/static/css/main.6e92e652.css.map",
-    "main.5cebc68c.js.map": "/embifiwebsite/static/js/main.5cebc68c.js.map"
+    "main.c8644e57.css.map": "/embifiwebsite/static/css/main.c8644e57.css.map",
+    "main.87ff2c38.js.map": "/embifiwebsite/static/js/main.87ff2c38.js.map"
   },
   "entrypoints": [
-    "static/css/main.6e92e652.css",
-    "static/js/main.5cebc68c.js"
+    "static/css/main.c8644e57.css",
+    "static/js/main.87ff2c38.js"
   ]
 }
