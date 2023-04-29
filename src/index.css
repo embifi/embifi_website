@@ -6,6 +6,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  overflow-x: hidden;
+}
 
 ::-webkit-scrollbar {
   width: 10px;
@@ -438,4 +441,7 @@
     bottom: 0;
     opacity: 0;
   }
+}
+body{
+  overflow-x: hidden;
 }

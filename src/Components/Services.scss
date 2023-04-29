@@ -4,112 +4,7 @@ $text-inside: #fff;
 $transition-in: all 250ms ease-out;
 $transition-out: all 250ms ease-in;
 
-
-
-#learn-more {
-  fill-opacity: 0;
-  fill: #fff;
-  stroke: #fff;
-  stroke-width: 2;
-  border-radius: 5px;
-  stroke-linejoin: round;
-  transition: $transition-out;
-  cursor: pointer;
-
-  &:hover {
-    fill-opacity: 1;
-
-    & ~ .learn-more-text {
-      fill: $primary-brand;
-    }
-  }
-}
-.learn-more-text {
-  font-family: "Roboto";
-  fill: #fff;
-  pointer-events: none;
-  font-size: 14px;
-  transition: $transition-out;
-}
-
-.center {
-  fill: $primary-brand;
-}
-
-.pointer {
-  fill: #fff;
-  stroke: #3b8fc0;
-  stroke-width: 2;
-}
-
-.nav-copy {
-  font-family: "Roboto";
-  fill: #fff;
-  fill-opacity: 1;
-  transition: $transition-out;
-
-  &.changing {
-    fill-opacity: 0;
-  }
-}
-.service {
-  cursor: pointer;
-
-  text {
-    font-size: 14px;
-    font-family: "Roboto";
-    text-anchor: middle;
-  }
-
-  .icon-wrapper {
-    transform-origin: 60% 60%;
-
-    &,
-    & > * {
-      transition: $transition-out;
-    }
-  }
-  circle {
-    fill: $primary-brand;
-
-    &.shadow {
-      fill-opacity: 0;
-      filter: url(#service-shadow);
-    }
-  }
-
-  use {
-    fill: #fff;
-  }
-
-  text {
-    fill: $text-outside;
-  }
-
-  &.active,
-  &:hover {
-    .icon-wrapper {
-      transform: scale(1.15) translateY(-5px);
-
-      &,
-      & > * {
-        transition: $transition-in;
-      }
-
-      circle {
-        &.shadow {
-          fill-opacity: 0.4;
-        }
-      }
-    }
-
-    text {
-      fill: $primary-brand;
-      font-weight: bold;
-    }
-  }
-}
-
+  
 
 .cls-1 {
     font-size: 28px;
@@ -199,7 +94,7 @@ $transition-out: all 250ms ease-in;
   }
 
   .service__circle{
-    // border: 2px solid red;
+    border: 2px solid red;
     margin: 10rem 30rem ;
     display: flex;
     // justify-content: center;
@@ -207,43 +102,73 @@ $transition-out: all 250ms ease-in;
     border-radius: 50%;
     align-items: baseline;
     position: relative;
+    // animation: rotate 5s linear infinite;
   }
   .sub-circle{
-    padding: 40px;
-    width: 50px;
-    height: 50px;
+    padding: 2em;
+    width: 10em;
+    height: 5em;
     border: 2px solid yellow;
-    border-radius: 50%;
+    // border-radius: 50%;
     position: absolute;
     bottom: 0;   
+    text-align: center;
   }
  .circle-1{
-top: 130px;
-left: 15px;
+  top: 130px;
+  left: 15px;
+  transform: translate(4px, -10px);
+  // text-align: center;
  }
  .circle-2{
     left: 50px;
     top: 225px;
  }
  .circle-3{
-    left: 144px;
-    top: 287px;
+  left: 144px;
+  top: 287px;
+  transform: translate(5px, 28px);
 
  }
  .circle-4{
-    left: 263px;
-    top: 283px;
+  left: 243px;
+  top: 328px;
+  transform: translateX(43px);
  }
  .circle-5{
-    left: 372px;
-    top: 225px;
+  left: 372px;
+  top: 225px;
+  transition: translateX(45px);
+  transform: translate(41px, 25px);
  }
  .circle-6{
-    left: 409px;
-    top: 119px;
+  left: 409px;
+  top: 119px;
+  transform: translate(51px, 10px);
  }
 
  .Image{
-    position: absolute;
-    top: 15%;
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  width: 15vw;
+  height: 30vw;
  }
+ .service__circle-align{
+   flex-basis: center;
+ }
+ .video{
+  border-style: none;
+ }
+
+ @keyframes rotate {
+  0%{
+      transform: rotate(0);
+  }
+  100%{
+      transform: rotate(360deg);
+  }
+  
+}

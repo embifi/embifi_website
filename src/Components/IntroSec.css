@@ -32,6 +32,7 @@ body{
     border-radius: 45%;
     animation: rotate 30s infinite;
     
+    
 }
 .floating-bg::before{
    content: "";
@@ -164,3 +165,19 @@ body{
   .banner-btn:hover::before {
     left: 100%;
   }
+ .video_section{
+  position: absolute;
+  top: 70%;
+  overflow: hidden;
+ }
+ .video_1{
+  position: relative;
+  left: 0;
+  top: 0;
+
+ }
+ .gifImage{
+  position: absolute;
+  bottom: 0;
+   opacity: 0.9;
+ }

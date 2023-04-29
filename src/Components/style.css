@@ -12,7 +12,9 @@
   --header-bg-color: #673ab7;
   --splash-bg-color: #368887;
 }
-
+body{
+  overflow-x: hidden;
+}
 .navbar {
   position: fixed;
   width: 100%;

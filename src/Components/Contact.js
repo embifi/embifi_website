@@ -23,12 +23,14 @@ function Contact() {
   const [contactData, setContactData] = useState({
     name: "",
     email: "",
+    phone: "",
     message: "",
   });
 
   const [contactError, setContactError] = useState({
     name: "",
     email: "",
+    phone:"",
   });
 
   const steps = [
@@ -82,11 +84,22 @@ function Contact() {
     return isValid;
   };
 
+  const isNumberValid = ()=>{
+    const {phone} = contactData;
+    let isValid = true;
+    if(phone.length === 12){
+      setContactError((prev) => ({...prev, phone: "Phone number not valid" }));
+      isValid = false;
+    }
+    return isValid;
+  }
+
   const handleSubmit = () => {
-    const { name, email, message } = contactData;
+    const { name, email, phone, message } = contactData;
     let data = JSON.stringify({
       name: name,
       email: email,
+      phone:phone,
       message: message,
     });
 

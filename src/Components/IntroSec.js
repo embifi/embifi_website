@@ -1,10 +1,13 @@
 import React, { useContext, useEffect, useRef, useState } from "react";
+import Iframe from "react-iframe";
 import { Col, Container, Row } from "react-bootstrap";
 import { Button } from "@mui/material";
 import Zoom from "react-reveal/Zoom";
 import Typewriter from "typewriter-effect";
 import { GlobalInfo } from "../context/GlobalContext";
 import intro_bg from "../Assets/intro-bg.svg";
+// import riksha from "../Assets/e-riksha.mp4";
+import finalGif from '../Assets/final_1.gif'
 import "./IntroSec.css";
 
 function IntroSec() {
@@ -53,9 +56,8 @@ function IntroSec() {
   return (
     <>
       <section className="Section-1">
-        <img src={intro_bg} className="intro-bg-img" />
         <div className="landing-page">
-          <div className="floating-bg"></div>
+          {/* <div className="floating-bg"></div> */}
           <div className="text-center">
             <p className="intro-sec-title">
               Embedding Finance in EV for a Better Tomorrow!{" "}
@@ -74,18 +76,12 @@ function IntroSec() {
             >
               Learn more
             </Button>
-            {/* <button class="banner-btn">Learn More</button> */}
           </div>
-          {/* <Button
-            className="intro-btn ms-0 mt-4"
-            variant="outlined"
-            onClick={() =>
-              quote.current?.scrollIntoView({ behavior: "smooth" })
-            }
-          >
-            Learn more
-          </Button> */}
         </div>
+        {/* <div style={{ background: "red", width }} >
+          <video src={riksha} autoPlay loop />
+        </div> */}
+        <img src={finalGif} alt="loading....." style={{width:"100%", height:"40%"}} className="gifImage"/> 
       </section>
     </>
   );
