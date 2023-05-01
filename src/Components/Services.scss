@@ -163,12 +163,75 @@ $transition-out: all 250ms ease-in;
   border-style: none;
  }
 
- @keyframes rotate {
+ @keyframes move {
   0%{
-      transform: rotate(0);
+      transform: translate(0,0)
+  }
+  25%{
+      transform: translate(50px,0px);
+  }
+  50%{
+    transform: translate(400px,400px);
+  }
+  75%{
+      transform: translate(0,400px)
   }
   100%{
-      transform: rotate(360deg);
+    transform: translate(0,0);
   }
+}
+.rikha-image{
+  width: 40vw;
+  height: 40vw;
+ 
+}
+.col{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // border: 2px solid red;
   
+}
+.circle-div{
+  // border: 2px solid red;
+  border-radius: 0%;
+  position: relative;
+  // width: 400px;
+  // height: 400px;
+  // padding: 5em;
+  
+}
+.heading-name{
+  position: absolute;
+  // border: 2px solid red;
+  padding: 15px;
+ 
+}
+.service-heading-1{
+  // position: relative;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color:  #6CB3FC;
+}
+.service-heading-2{
+  // position: relative;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color:  #6CB3FC;
+}
+.service-heading-3{
+  // position: realtive;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color:  #6CB3FC;
+  // animation: move 4s infinite;
+}
+.service-heading-4{
+  top: 50%;
+  transform: translateY(-50%);
+  background-color:  #6CB3FC;
+ 
 }
