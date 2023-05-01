@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/embifiwebsite/static/css/main.c8644e57.css",
-    "main.js": "/embifiwebsite/static/js/main.87ff2c38.js",
+    "main.css": "/embifiwebsite/static/css/main.a7a5454d.css",
+    "main.js": "/embifiwebsite/static/js/main.0a793bef.js",
+    "static/media/final_1.gif": "/embifiwebsite/static/media/final_1.b327bf2bb0c75a06d331.gif",
     "static/media/products.svg": "/embifiwebsite/static/media/products.53eaa457f30645e5f5d985746760a81e.svg",
     "static/media/aboutus-img-1.svg": "/embifiwebsite/static/media/aboutus-img-1.21d32545cca8d2ecaa5c6b95cb78a92e.svg",
     "static/media/aboutus-img-3.svg": "/embifiwebsite/static/media/aboutus-img-3.c79b9d68c4a7d9a18e6dfc7bdd07ea97.svg",
@@ -14,6 +15,7 @@
     "static/media/credit.gif": "/embifiwebsite/static/media/credit.4de8f02a492636ab971f.gif",
     "static/media/loginsideimg.jpg": "/embifiwebsite/static/media/loginsideimg.7cfce53aa568ba0118ff.jpg",
     "static/media/intro-bg.svg": "/embifiwebsite/static/media/intro-bg.33c39cdee08c85f906f35c36e3bc125e.svg",
+    "static/media/Copy of Logos (1).svg": "/embifiwebsite/static/media/Copy of Logos (1).d40bd06ea5a11fcd9792671b46ea451d.svg",
     "static/media/anupam.jpeg": "/embifiwebsite/static/media/anupam.284f891ad116ed8cbccb.jpeg",
     "static/media/kshitij.jpg": "/embifiwebsite/static/media/kshitij.f7b2d7bc600789903717.jpg",
     "static/media/ny.png": "/embifiwebsite/static/media/ny.621ee871e34327326f0b.png",
@@ -25,11 +27,11 @@
     "index.html": "/embifiwebsite/index.html",
     "static/media/Avatar.svg": "/embifiwebsite/static/media/Avatar.de7d896764ff4e99625930bd6d435b58.svg",
     "static/media/user.svg": "/embifiwebsite/static/media/user.81fbbe39e1e80c69b9548d931637bd8c.svg",
-    "main.c8644e57.css.map": "/embifiwebsite/static/css/main.c8644e57.css.map",
-    "main.87ff2c38.js.map": "/embifiwebsite/static/js/main.87ff2c38.js.map"
+    "main.a7a5454d.css.map": "/embifiwebsite/static/css/main.a7a5454d.css.map",
+    "main.0a793bef.js.map": "/embifiwebsite/static/js/main.0a793bef.js.map"
   },
   "entrypoints": [
-    "static/css/main.c8644e57.css",
-    "static/js/main.87ff2c38.js"
+    "static/css/main.a7a5454d.css",
+    "static/js/main.0a793bef.js"
   ]
 }
