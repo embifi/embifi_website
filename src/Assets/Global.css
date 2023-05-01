@@ -157,6 +157,40 @@
     display: grid;
     grid-template-columns: 1fr 20% 1fr;
 }
+@media (width <= 1352px ){
+    .services-sec {
+        height: 30em;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 24% 1fr;
+    }
+  
+}
+@media (width <= 1280px) {
+    .services-sec {
+        height: 30em;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 32% 1fr;
+    }
+   }
+
+   @media (width <= 768px) {
+    .services-sec {
+        height: 30em;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 36% 1fr;
+    }
+   }
+   @media (width <= 680px) {
+    .services-sec {
+        height: 30em;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 40% 1fr;
+    }
+   }  
 
 .ss-box-1 {
     display: flex;

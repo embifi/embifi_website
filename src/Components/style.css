@@ -22,6 +22,19 @@
   height: 10rem;
   z-index: 1000;
 }
+/* @media (min-width: 700px) and (max-width:968px){
+  .navbar {
+    position: fixed;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 80% 1fr;
+    grid-template-rows: 1;
+    padding: 0 15px;
+    height: 10rem;
+    z-index: 1000;
+  }
+} */
+
 
 .navlinks .active {
   border-bottom: 1.5px solid white;
@@ -58,6 +71,21 @@
   border: 1px solid rgb(28, 214, 158) !important;
   margin-left: 30px !important;
   transition: 1s ease;
+}
+@media (max-width: 1008px) {
+  .contact-btn {
+    background-image: -glinearradient(to bottom right,
+        #2e1e5d,
+        #9d31a0) !important;
+    color: #fff !important;
+    font-size: 12px !important;
+    padding: 10px 20px 10px 20px !important;
+    border-radius: 50px !important;
+    /* border: none !important; */
+    border: 1px solid rgb(28, 214, 158) !important;
+    margin-left: 0px !important;
+    transition: 1s ease;
+  }
 }
 
 .contact-btn:hover {
