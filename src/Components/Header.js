@@ -77,7 +77,7 @@ function Header() {
           />
           <ul className="navlinks mt-3">
             <li
-              className={`pointer ${active.home && 'active'}`}
+              className={`pointer ${active.home && 'li-active'}`}
               onClick={() => {
                 navigate('/home')
               }}
@@ -85,7 +85,7 @@ function Header() {
               Home
             </li>
             <li
-              className={`pointer ${active.services && 'active'}`}
+              className={`pointer ${active.services && 'li-active'}`}
               onClick={() =>
                 navigate('/services')
               }
@@ -93,7 +93,7 @@ function Header() {
               Services
             </li>
             <li
-              className={`pointer ${active.whyUs && 'active'}`}
+              className={`pointer ${active.whyUs && 'li-active'}`}
               onClick={() =>
                 navigate('/why-us')
               }

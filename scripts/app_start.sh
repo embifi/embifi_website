@@ -1,0 +1,1 @@
+echo "completed app_start.sh"

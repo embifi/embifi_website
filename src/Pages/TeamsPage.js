@@ -23,6 +23,8 @@ import User from "../Assets/user.svg";
 import anupam_img from '../Assets/anupam.jpeg';
 import kshitij_img from '../Assets/kshitij.jpg';
 import team_dp from '../Assets/teamdp.gif';
+import Modal from 'react-bootstrap/Modal';
+import Button from 'react-bootstrap/Button';
 
 const imgSrc =
     "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg/1200px-Elon_Musk_Royal_Society_%28crop2%29.jpg";
@@ -30,10 +32,15 @@ const imgSrc =
 const TeamsPage = () => {
     const [team, setTeam] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
+    const [show, setShow] = useState(false);
+    const [info, setInfo] = useState({});
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
 
     const founders = [
-        { name: 'Anupam Yadav', img: anupam_img, job_title: 'Co-founder & CEO', about: '', linkedin: "https://www.linkedin.com/in/anupamyadav/" },
-        { name: 'Kshitij Sharma', img: kshitij_img, job_title: 'Co-founder & CTO', about: '', linkedin: "https://www.linkedin.com/in/sharmakshitij/" }
+        { name: 'Anupam Yadav', img: anupam_img, job_title: 'Co-founder & CEO', about: "Passionate about Embedded Finance, B2B space, Indian Startup Ecosystem, the exponential growth in the Tier 2, 3, 4 cities and the EV revolution. An alumnus of FMS & IIT Roorkee with 12 years of experience across two unicorn Fintechs & two established MNC banks.", linkedin: "https://www.linkedin.com/in/anupamyadav/" },
+        { name: 'Kshitij Sharma', img: kshitij_img, job_title: 'Co-founder & CTO', about: "14+ years of engaging experience at engineering value-based bespoke solutions worked with cross-functional and agile teams across india, uk, tunisia, belgium and romania mostly take contextual approach at problem solving focus on the serverless function of parsing(strategy, product vision, prioritized product back log, features, user stories, tasks);", linkedin: "https://www.linkedin.com/in/sharmakshitij/" }
     ];
 
     const teamTemp = [
@@ -107,21 +114,18 @@ const TeamsPage = () => {
         fetchData();
     }, []);
 
+    useEffect(() => {
+        console.log('-- ', info)
+    }, [info])
+
     return (
         <>
             <PlainHeader />
             <div className="privacy-head-div">
                 <Container gap={3}>
                     <p className="privacy-heading-about-us underline">Meet Our Team</p>
-                    {/* <span className="about-us-subtitle">We are a startup in "the" embedded finance space. </span> */}
                     <br />
                     <br />
-                    {/* <Row>
-                        <Col xs={12} sm={12} md={6} lg={6}>
-
-                            <p>We at embify</p>
-                        </Col>
-                    </Row> */}
                 </Container>
             </div>
 
@@ -137,26 +141,29 @@ const TeamsPage = () => {
                     <Row style={{ justifyContent: "center", gap: '40px' }}>
                         {founders.map((val, ind) => {
                             return (
-                                <Col className=" about-card mt-3" md={4} lg={3} sm={6} xs={12} key={ind}>
+                                <Col className="about-card mt-3" md={4} lg={3} sm={6} xs={12} key={ind}>
                                     <div class="Card border-light mb-3" style={{ width: "220px" }}>
                                         <img
                                             className="img-round card-img-top"
                                             src={val.img || User}
                                             style={{ borderRadius: "182px", height: "218px", objectFit: 'contain' }}
                                             alt="..."
+                                            onClick={() => { handleShow(); setInfo(val); }}
                                         />
                                         <div className="card-body">
                                             <div className="details">
-                                                <p className="name">
-                                                    {val.name}
+                                                <div className="d-flex justify-content-between align-items-center">
+                                                <p className="aboutus-card-name">
+                                                        {val.name}
+                                                    </p>
                                                     <a href={val.linkedin} target='_blank' style={{ cursor: "pointer" }}>
                                                         <LinkedInIcon className={"icon"} />
                                                     </a>
-                                                </p>
+                                                </div>
                                                 <p>{val.job_title}</p>
-                                                <p>
+                                                {/* <p>
                                                     {val.about}
-                                                </p>
+                                                </p> */}
                                             </div>
                                         </div>
                                     </div>
@@ -183,15 +190,18 @@ const TeamsPage = () => {
                                             src={val.img || User}
                                             style={{ borderRadius: "182px", height: "218px", objectFit: 'contain' }}
                                             alt="..."
+                                            onClick={() => { handleShow(); setInfo(val); }}
                                         />
                                         <div className="card-body">
                                             <div className="details">
-                                                <p className="name">
-                                                    {val.name}
+                                                <div className="d-flex justify-content-between align-items-center">
+                                                    <p className="aboutus-card-name">
+                                                        {val.name}
+                                                    </p>
                                                     <a href={val.linkedin} target='_blank' style={{ cursor: "pointer" }}>
                                                         <LinkedInIcon className={"icon"} />
                                                     </a>
-                                                </p>
+                                                </div>
                                                 <p>{val.job_title}</p>
                                                 <p>
                                                     {val.about}
@@ -205,53 +215,39 @@ const TeamsPage = () => {
                     </Row>
                 </Container> */}
 
-                {/* <Container style={{ marginTop: '4em' }}>
-                        <h3 className="mx-auto text-center meet">Meet Our Team Members</h3>
-                    </Container>
-                    <Container className="mt-4">
-                        <Row>
-                            {team.map((member) => {
-                                if (member.email != "kshitij@embifi.in" && member.email !== "anupam@embifi.in" && member.email !== "admin@embifi.in") {
-                                    return (
-                                        <Col
-                                            className=" about-card mt-3"
-                                            sx={{
-                                                minHeight: "700px"
-                                            }}
-                                            md={4}
-                                            lg={3}
-                                            sm={6}
-                                            xs={12}
-                                            key={member.id}
-                                        >
-                                            <div class="Card order-light mb-3" style={{ width: "220px" }}>
-                                                <img
-                                                    className="img-round card-img-top"
-                                                    src={member.image || User}
-                                                    style={{ borderRadius: "182px", height: "218px" }}
-                                                    alt="..."
-                                                />
-                                                <div className="card-body">
-                                                    <div className="details">
-                                                        <p className="name">
-                                                            {member.name}
-                                                            <a href={member.linkedin} target="_blank" style={{ cursor: "pointer" }}>
-                                                                <LinkedInIcon className={"icon"} />
-                                                            </a>
-                                                        </p>
-                                                        <p>{member.job_title}</p>
-                                                        <p>{member.about}</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </Col>
-                                    )
-                                }
-
-
-                            })}
-                        </Row>
-                    </Container> */}
+                <Modal
+                    show={show}
+                    onHide={handleClose}
+                    keyboard={false}
+                    centered
+                    size="lg"
+                >
+                    <Modal.Body>
+                        <div className="modal-body">
+                            <div style={{ width: "218px" }}>
+                                <img
+                                    src={info?.img}
+                                    style={{ borderRadius: "182px", height: "218px", width: "218px", objectFit: 'contain', border: '1px solid grey' }}
+                                    alt="..."
+                                />
+                            </div>
+                            <div className="emp-details">
+                                <p className="emp-name fw-bolder">
+                                    {info?.name}
+                                    <a href={info.linkedin} target="_blank" style={{ cursor: "pointer", marginLeft: '0.3em' }}>
+                                        <LinkedInIcon className={"icon"} />
+                                    </a>
+                                </p>
+                                <p className="emp-designation">
+                                    {info?.job_title}
+                                </p>
+                                <p className="emp-about">
+                                    {info?.about}
+                                </p>
+                            </div>
+                        </div>
+                    </Modal.Body>
+                </Modal>
             </>
 
 
@@ -259,33 +255,6 @@ const TeamsPage = () => {
                 <Row style={{ marginTop: '5em' }}>
                     <h3 className="mx-auto text-center meet underline">Join Our Team</h3>
                 </Row>
-                {/* <Row className="row-rev">
-                    <Col
-                        md={12}
-                        lg={8}
-                        style={{
-                            margin: "auto",
-                            display: "flex",
-                            justifyContent: "center",
-                        }}
-                    >
-                        <span style={{ fontWeight: "500", padding: "15px" }}>
-                            We advertise roles in Software Development, Product Design and
-                            Product Management via <a href="https://www.linkedin.com/company/embifi/" target='_blank'>LinkedIn</a>
-                        </span>
-                    </Col>
-                    <Col
-                        md={12}
-                        lg={4}
-                        style={{
-                            margin: "auto",
-                            display: "flex",
-                            justifyContent: "center",
-                        }}
-                    >
-                        <img style={{ padding: "15px" }} src={image3} alt="" />
-                    </Col>
-                </Row> */}
             </Container>
 
             <Container style={{ marginTop: '4em', marginBottom: '4em' }}>
