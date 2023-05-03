@@ -400,7 +400,7 @@ const TeamsPage = () => {
                     </div> */}
 
                     <div class="card1">
-                      <img src={member.image} alt="ceo" class="CardImg" />
+                      <img src={team_dp} alt="ceo" class="CardImg" />
                       <div class="team-detail">
                         <h3 class="title">{member.name}</h3>
                         <p class="sub-title">{member.job_title}</p>
