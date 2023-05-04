@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row, Modal, Button } from "react-bootstrap";
 import PlainHeader from "../Components/PlainHeader";
 import image1 from "../Assets/svgexport-2.svg";
 import image2 from "../Assets/svgexport-3.svg";
@@ -23,11 +23,8 @@ import User from "../Assets/user.svg";
 import anupam_img from '../Assets/anupam.jpeg';
 import kshitij_img from '../Assets/kshitij.jpg';
 import team_dp from '../Assets/teamdp.gif';
-import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button';
 
-const imgSrc =
-    "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg/1200px-Elon_Musk_Royal_Society_%28crop2%29.jpg";
+
 
 const TeamsPage = () => {
     const [team, setTeam] = useState([]);
@@ -49,17 +46,17 @@ const TeamsPage = () => {
         { name: 'Shahabaz', img: team_dp, job_title: 'Full Stack Engineer', about: '', linkedin: "https://www.linkedin.com/in/sharmakshitij/" },
         { name: 'Shameem Lukman', img: team_dp, job_title: 'Full Stack Engineer', about: '', linkedin: "https://www.linkedin.com/in/sharmakshitij/" },
         { name: 'Prateek Yadav', img: team_dp, job_title: 'Full Stack Engineer', about: '', linkedin: "https://www.linkedin.com/in/sharmakshitij/" },
+        { name: 'Gaurav Parashar', img: team_dp, job_title: '', about: '', linkedin: "https://www.linkedin.com/in/sharmakshitij/" },
+        { name: 'Rishabh Ahuja', img: team_dp, job_title: 'Full Stack Engineer', about: '', linkedin: "https://www.linkedin.com/in/sharmakshitij/" },
         { name: 'Samad', img: team_dp, job_title: 'Full Stack Engineer', about: '', linkedin: "https://www.linkedin.com/in/sharmakshitij/" },
         { name: 'Rutvij Patel', img: team_dp, job_title: 'Full Stack Engineer', about: '', linkedin: "https://www.linkedin.com/in/sharmakshitij/" },
-        { name: 'Rishabh Ahuja', img: team_dp, job_title: 'Full Stack Engineer', about: '', linkedin: "https://www.linkedin.com/in/sharmakshitij/" },
-        { name: 'Gaurav Parashar', img: team_dp, job_title: '', about: '', linkedin: "https://www.linkedin.com/in/sharmakshitij/" },
-        { name: 'Ashutosh', img: team_dp, job_title: '', about: '', linkedin: "https://www.linkedin.com/in/sharmakshitij/" },
-        { name: 'Gaurav Agarwal', img: team_dp, job_title: '', about: '', linkedin: "https://www.linkedin.com/in/sharmakshitij/" },
-        { name: 'Yogesh', img: team_dp, job_title: '', about: '', linkedin: "https://www.linkedin.com/in/sharmakshitij/" },
         { name: 'Sanjay', img: team_dp, job_title: '', about: '', linkedin: "https://www.linkedin.com/in/sharmakshitij/" },
         { name: 'Anjali Pathak', img: team_dp, job_title: '', about: '', linkedin: "https://www.linkedin.com/in/sharmakshitij/" },
-        { name: 'Kanupriya', img: team_dp, job_title: '', about: '', linkedin: "https://www.linkedin.com/in/sharmakshitij/" },
         { name: 'Shiraj', img: team_dp, job_title: '', about: '', linkedin: "https://www.linkedin.com/in/sharmakshitij/" },
+        { name: 'Yogesh', img: team_dp, job_title: '', about: '', linkedin: "https://www.linkedin.com/in/sharmakshitij/" },
+        { name: 'Kanupriya', img: team_dp, job_title: '', about: '', linkedin: "https://www.linkedin.com/in/sharmakshitij/" },
+        { name: 'Gaurav Agarwal', img: team_dp, job_title: '', about: '', linkedin: "https://www.linkedin.com/in/sharmakshitij/" },
+        { name: 'Ashutosh', img: team_dp, job_title: '', about: '', linkedin: "https://www.linkedin.com/in/sharmakshitij/" },
     ];
 
     const getImage = async (key) => {
@@ -87,7 +84,7 @@ const TeamsPage = () => {
     };
 
     useEffect(() => {
-        window.scrollTo(0, 0);
+        // window.scrollTo(0, 0);
 
         const fetchData = async () => {
             const { data } = await getAllUsersData();
@@ -120,21 +117,21 @@ const TeamsPage = () => {
 
     return (
         <>
-            <PlainHeader />
-            <div className="privacy-head-div">
+            {/* <PlainHeader /> */}
+            {/* <div className="privacy-head-div">
                 <Container gap={3}>
-                    <p className="privacy-heading-about-us underline">Meet Our Team</p>
+                    <p className="privacy-heading-about-us underline text-center">Meet Our Team</p>
                     <br />
                     <br />
                 </Container>
-            </div>
+            </div> */}
 
 
             <>
                 <Container style={{ marginTop: '2em' }}>
                     <Row style={{ display: "flex", justifyContent: "center", margin: '1em 0' }}>
                         <span style={{ display: "contents" }} className="founder-span">
-                            Meet Our Founders
+                            Our Founders
                         </span>
                     </Row>
 
@@ -153,7 +150,7 @@ const TeamsPage = () => {
                                         <div className="card-body">
                                             <div className="details">
                                                 <div className="d-flex justify-content-between align-items-center">
-                                                <p className="aboutus-card-name">
+                                                    <p className="aboutus-card-name">
                                                         {val.name}
                                                     </p>
                                                     <a href={val.linkedin} target='_blank' style={{ cursor: "pointer" }}>
@@ -253,7 +250,7 @@ const TeamsPage = () => {
 
             <Container className="mt-2 mb-0">
                 <Row style={{ marginTop: '5em' }}>
-                    <h3 className="mx-auto text-center meet underline">Join Our Team</h3>
+                    <h3 className="mx-auto text-center meet mb-0">Join Our Team</h3>
                 </Row>
             </Container>
 
@@ -290,7 +287,7 @@ const TeamsPage = () => {
                 </Row>
             </Container>
 
-            <FooterComp />
+            {/* <FooterComp /> */}
         </>
     );
 };

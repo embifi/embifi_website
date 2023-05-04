@@ -20,9 +20,9 @@ import FooterComp from "../Components/Footer";
 import { toast } from "react-toastify";
 import axios from "axios";
 import User from "../Assets/user.svg"
+import TeamsPage from "./TeamsPage";
 
-const imgSrc =
-    "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg/1200px-Elon_Musk_Royal_Society_%28crop2%29.jpg";
+
 
 const AboutUs = () => {
     const [team, setTeam] = useState([]);
@@ -49,7 +49,7 @@ const AboutUs = () => {
     };
 
     useEffect(() => {
-        window.scrollTo(0,0);
+        window.scrollTo(0, 0);
 
         const fetchData = async () => {
             const { data } = await getAllUsersData();
@@ -82,63 +82,59 @@ const AboutUs = () => {
             <div className="privacy-head-div">
                 <Container gap={3}>
                     <p className="privacy-heading-about-us">About Us</p>
-                    {/* <span className="about-us-subtitle">We are a startup in "the" embedded finance space. </span> */}
                     <br />
-                    <br />
-                    {/* <Row>
-                        <Col xs={12} sm={12} md={6} lg={6}>
-
-                            <p>We at embify</p>
-                        </Col>
-                    </Row> */}
                 </Container>
             </div>
             <Container className="mt-4">
-                <Row>
-                    <p className='' style={{ fontWeight: "800" }}>
-                        Taking loans from banks is still a time-consuming process in India, and constant rejections
-                        discourage people from doing so.
+                <Row
+                    style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        fontWeight: "800",
+                    }}
+                >
+                    <Col
+                        style={{ display: "flex", justifyContent: "center" }}
+                        md={4}
+                        lg={4}
+                        sm={4}
+                        xs={4}
+                    >
+                        <img
+                            style={{ width: "50%", minWidth: "300px" }}
+                            src={aboutus_3}
+                            alt="" className='pulse-2'
+                        />
+                    </Col>
+                    <Col
+                        style={{ display: "flex", justifyContent: "center" }}
+                        md={6}
+                        lg={6}
+                        sm={6}
+                        xs={6}
+                    >
+                        <p className='' style={{ fontWeight: "800" }}>
+                            Taking loans from banks is still a time-consuming process in India, and constant rejections
+                            discourage people from doing so. 
+                            Even after promises of support and subsidies from the authorities, customers often find it hard to finance their needs.
+                            This is where we step in, we provide loan-facilitating platform for the EV ecosystem.
+                            Our seamless digital process enables the consumers to escape long queues and ever lasting queries to avail loans at their fingertips.
+                        </p>
+                    </Col>
+
+                    {/* <p className='' style={{ fontWeight: "800" }}>
+                        Even after promises of support and subsidies from the authorities, customers often find it hard to finance their needs.
                     </p>
+                    <p className='' style={{ fontWeight: "800" }}>
+                        This is where we step in, we provide loan-facilitating platform for the EV ecosystem.
+                    </p>
+                    <p className='' style={{ fontWeight: "800" }}>
+                        Our seamless digital process enables the consumers to escape long queues and ever lasting queries to avail loans at their fingertips.
+                    </p> */}
 
                 </Row>
-                {/* <hr />
-                <Row className="row-rev">
-                    <Col className="image-cont" md={3} sm={3} xs={12}>
-                        <img className="about-img" src={aboutus_1} alt="" />
-                    </Col>
-                    <Col xs={12} className="cont-text">
-                        Even after promises of support and subsidies from the authorities, customers often find it hard
-                        to finance their needs.
-                    </Col>
-                </Row>
-                <hr />
-                <Row>
-                    <Col className="image-cont" md={3} sm={3} xs={12}>
-                        <img className="about-img" src={aboutus_2} alt="" />
-                    </Col>
-                    <Col md={8} sm={3} xs={12} className="cont-text">
-                        This is where we step in, We provide loan-facilitating platform for smoothening the flow of
-                        transactions between our partnered NBFCs/Banks and the borrowers.
-                    </Col>
-                </Row>
-                <hr />
-                <Row className="row-rev">
-                    <Col className="image-cont" md={3} sm={3} xs={12}>
-                        <img className="about-img" src={aboutus_3} alt="" />
-                    </Col>
-                    <Col md={8} className="cont-text">
-                        Our seamless digital process enables the consumers to escape long queues and ever lasting
-                        questioning to avail loans on their fingertips.
-                    </Col>
-                </Row>
-                <hr /> */}
 
-                {/* <Row>
-                    <center>
-                        We have partnered with multiple OEMs and Dealers to assist our consumers in obtaining loans to
-                        purchase their E Rickshaw and contribute to the economy in a green and sustainable manner.
-                    </center>
-                </Row> */}
             </Container>
             <Container className="mt-4">
                 <Row
@@ -149,10 +145,10 @@ const AboutUs = () => {
                         fontWeight: "800",
                     }}
                 >
-                    <Col md={6} lg={6} sm={12} xs={12}>
+                    {/* <Col md={6} lg={6} sm={12} xs={12}>
                         Even after promises of support and subsidies from the authorities, customers often find it hard to finance their needs.
-                    </Col>
-                    <Col
+                    </Col> */}
+                    {/* <Col
                         style={{ display: "flex", justifyContent: "center" }}
                         md={6}
                         lg={6}
@@ -164,7 +160,7 @@ const AboutUs = () => {
                             src={aboutus_1}
                             alt="" className='pulse-2'
                         />
-                    </Col>
+                    </Col> */}
                 </Row>
             </Container>
             <Container className="mt-4">
@@ -176,7 +172,7 @@ const AboutUs = () => {
                         fontWeight: "800",
                     }}
                 >
-                    <Col
+                    {/* <Col
                         style={{ display: "flex", justifyContent: "center" }}
                         md={6}
                         lg={6}
@@ -188,10 +184,10 @@ const AboutUs = () => {
                             src={aboutus_2}
                             alt="" className='pulse-2'
                         />
-                    </Col>
-                    <Col md={6} lg={6} sm={12} xs={12}>
+                    </Col> */}
+                    {/* <Col md={6} lg={6} sm={12} xs={12}>
                         This is where we step in, we provide loan-facilitating platform for the EV ecosystem.
-                    </Col>
+                    </Col> */}
                 </Row>
             </Container>
             <Container className="mt-4">
@@ -203,10 +199,10 @@ const AboutUs = () => {
                         fontWeight: "800",
                     }}
                 >
-                    <Col md={6} lg={6} sm={12} xs={12}>
+                    {/* <Col md={6} lg={6} sm={12} xs={12}>
                         Our seamless digital process enables the consumers to escape long queues and ever lasting queries to avail loans at their fingertips.
-                    </Col>
-                    <Col
+                    </Col> */}
+                    {/* <Col
                         style={{ display: "flex", justifyContent: "center" }}
                         md={6}
                         lg={6}
@@ -218,7 +214,7 @@ const AboutUs = () => {
                             src={aboutus_3}
                             alt="" className='pulse-2'
                         />
-                    </Col>
+                    </Col> */}
                 </Row>
             </Container>
 
@@ -229,7 +225,7 @@ const AboutUs = () => {
                 </Row>
             </Container> */}
 
-            <Container className="mt-4" style={{ display: 'flex', justifyContent: 'space-between' }}>
+            {/* <Container className="mt-4" style={{ display: 'flex', justifyContent: 'space-between' }}>
                 <Row>
                     <Col md={5} lg={5} sm={5} xs={5}>
                         <span className='animate-character'>
@@ -263,7 +259,7 @@ const AboutUs = () => {
                         <img style={{ width: "45vw" }} src={Box} alt="" className='vert-move' />
                     </Col>
                 </Row>
-            </Container>
+            </Container> */}
 
             {/* <Container className="mt-4">
                 <Row
@@ -298,6 +294,7 @@ const AboutUs = () => {
                 </Row>
             </Container> */}
 
+            <TeamsPage />
 
             <FooterComp />
         </>

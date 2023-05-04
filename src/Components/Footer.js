@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { FaFacebookF } from "react-icons/fa";
 import { DiGithubAlt } from "react-icons/di";
 import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
-import { BsTwitter } from "react-icons/bs";
+import { BsTwitter, BsPinMapFill } from "react-icons/bs";
 import { GrPaypal } from "react-icons/gr";
 import { SiRazorpay } from "react-icons/si";
 import { ImLocation2 } from "react-icons/im";
@@ -10,6 +10,7 @@ import { MdEmail } from "react-icons/md";
 import { Link } from "@mui/material";
 import { Link as ALink, useNavigate } from "react-router-dom";
 import { GlobalInfo } from "../context/GlobalContext";
+import { office_address } from '../constants';
 
 function FooterComp({ goback }) {
   const navigate = useNavigate();
@@ -34,7 +35,7 @@ function FooterComp({ goback }) {
               <p className="fw-500 f-17">Product & Modules</p>
               <ul>
                 <li className="mb-2 gray">
-                Loan Application
+                  Loan Application
                 </li>
                 <li className="mb-2 gray">KYC Module</li>
                 <li className="mb-2 gray">Loan Processing</li>
@@ -81,7 +82,7 @@ function FooterComp({ goback }) {
                     About Us
                   </Link>
                 </li>
-                <li className="pointer">
+                {/* <li className="pointer">
                   <Link
                     onClick={() => {
                       navigate("/our-team");
@@ -89,7 +90,7 @@ function FooterComp({ goback }) {
                   >
                     Our Team
                   </Link>
-                </li>
+                </li> */}
                 <li className="pointer">
                   <Link
                     onClick={() => {
@@ -133,10 +134,11 @@ function FooterComp({ goback }) {
               <p className="fw-500 f-17"><ImLocation2 /> Location</p>
               <ul>
                 <li>
-
                   Community Centre, 603-604, 6th Floor, Thapar House, Building
                   No. N 161, near Green Park Metro Station, Gulmohar Enclave,
                   New Delhi, Delhi 110016
+                  <br />
+                  <button className="maps-btn" onClick={() => window.open(office_address)}>Google Maps <i><BsPinMapFill /></i></button>
                 </li>
                 <li
                   className="pointer"

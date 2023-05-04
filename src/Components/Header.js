@@ -34,7 +34,7 @@ function Header() {
     // window.scrollY > 3900 && setActiveNav((prev) => ({ ...prev, services: false, whyUs: false, home: false }))
 
     window.scrollY < 1000 && setActiveNav((prev) => ({ ...prev, services: false, whyUs: false, home: true, aboutus: false }))
-    window.scrollY > 535 && setActiveNav((prev) => ({ ...prev, services: true, whyUs: false, home: false, aboutus: false }))
+    window.scrollY > 535 && window.scrollY < 1820 && setActiveNav((prev) => ({ ...prev, services: true, whyUs: false, home: false, aboutus: false }))
     window.scrollY > 1820 && window.scrollY < 2380 && setActiveNav((prev) => ({ ...prev, services: false, whyUs: true, home: false, aboutus: false }))
     // window.scrollY > 2340 && window.scrollY < 2420 && setActiveNav((prev) => ({ ...prev, services: false, whyUs: false, home: false, aboutus: false }))
     window.scrollY > 2470 && setActiveNav((prev) => ({ ...prev, services: false, whyUs: false, home: false, aboutus: false }))
@@ -108,14 +108,14 @@ function Header() {
             >
               About Us
             </li>
-            <li
+            {/* <li
               className={`pointer`}
               onClick={() =>
                 navigate('/our-team')
               }
             >
               Our Team
-            </li>
+            </li> */}
             <li
               className={`pointer`}
               onClick={() =>

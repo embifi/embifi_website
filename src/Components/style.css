@@ -46,7 +46,7 @@
   border-bottom: 2px solid #fff;
 }
 
-.li-active{
+.li-active {
   background-color: #1CD69E;
   padding: 0.2em 0.5em;
   border-radius: 10px;
@@ -69,7 +69,7 @@
 
 .contact-btn:hover {
   color: #fff !important;
-  /* background-color: #1CD69E !important; */
+  background-color: #1CD69E !important;
 }
 
 /* MOB HEADER */
@@ -548,11 +548,13 @@ img.vert-move {
 }
 
 .quote-child-0 {
+  margin-bottom: 0.4em;
   animation: slide-in-left 3s ease forwards;
   transform: translateX(-100%);
 }
 
 .quote-child-1 {
+  margin: 0.5em 0;
   animation: slide-in-right 3s ease forwards;
   animation-delay: 0.5s;
   transform: translateX(100%);
