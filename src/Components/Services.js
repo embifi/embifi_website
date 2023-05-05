@@ -34,7 +34,7 @@ function Services() {
         </svg>
         <img src={riksha} width={"40rem"} height={"40rem"} className="Image" /> */}
       {/* </div> */}
-      <div class="container">
+      {/* <div class="container">
         <div class="row">
           <div class="col">
             <div className="circle-div">
@@ -46,7 +46,21 @@ function Services() {
               </div>
           </div>
         </div>
+      </div> */}
+
+
+      <div className="service-container">
+        <div className="services" id="service-1">Loan Application</div>
+        <div className="services" id="service-2">Collection</div>
+        <div className="services" id="service-5"><img src={riksha} alt="" className="service-img"/></div>
+        <div className="services" id="service-3">Loan Processing</div>
+        <div className="services" id="service-4">Underwriting</div>
+        <div className="services" id="service-6">Kyc Module</div>
+        <div className="services" id="service-7">And much more</div>
+      
+        
       </div>
+      
     </section>
   );
 }
