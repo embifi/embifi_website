@@ -23,6 +23,20 @@ import User from "../Assets/user.svg";
 import anupam_img from "../Assets/anupam.jpeg";
 import kshitij_img from "../Assets/kshitij.jpg";
 import team_dp from "../Assets/teamdp.gif";
+import shameem from "../OurTeam Gif/sameem.gif";
+import ashutosh from '../OurTeam Gif/ashutosh.gif'
+import gauravPro from '../OurTeam Gif/gauravProduct.gif'
+import rutvij from  '../OurTeam Gif/Rutvij.gif'
+import reesab from  '../OurTeam Gif/Reesab.gif'
+import shahbaaz from '../OurTeam Gif/shahbaz.gif'
+import anupriya from '../OurTeam Gif/Anupriya.gif'
+import gaurav from '../OurTeam Gif/gauravPra.gif'
+import anjali from '../OurTeam Gif/Anjali.gif'
+import shiraz from '../OurTeam Gif/shiraz.gif'
+import yogesh from '../OurTeam Gif/Yogesh.gif'
+import sidhdarth from '../OurTeam Gif/sidhdarth.gif'
+import { WrapText } from "@mui/icons-material";
+
 
 const imgSrc =
   "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg/1200px-Elon_Musk_Royal_Society_%28crop2%29.jpg";
@@ -355,13 +369,25 @@ const TeamsPage = () => {
           <h3 className="mx-auto text-center meet">Meet Our Team Members</h3>
         </Container>
         <Container className="mt-4 ">
-          <Row>
-            {team.map((member) => {
+          <Row
+          
+        //   style={{
+        //     display: "flex",
+        //     justifyContent: "center",
+        //     alignItems: "center",
+        //     flexWrap:"wrap",
+        //     fontWeight: "800",
+        // }}
+          
+          
+          >
+            {/* {team.map((member) => {
               if (
                 member.email != "kshitij@embifi.in" &&
                 member.email !== "anupam@embifi.in" &&
                 member.email !== "admin@embifi.in"
               ) {
+                console.log(member);
                 return (
                   <Col
                     className=" about-card mt-3"
@@ -373,7 +399,7 @@ const TeamsPage = () => {
                     sm={6}
                     xs={12}
                     key={member.id}
-                  >
+                  > */}
                     {/* <div
                       class="Card order-light mb-3"
                       style={{ width: "220px" }}
@@ -399,7 +425,7 @@ const TeamsPage = () => {
                       <p>{member.about}</p>
                     </div> */}
 
-                    <div class="card1">
+                    {/* <div class="card1">
                       <img src={team_dp} alt="ceo" class="CardImg" />
                       <div class="team-detail">
                         <h3 class="title">{member.name}</h3>
@@ -412,11 +438,346 @@ const TeamsPage = () => {
                       >
                         <LinkedInIcon className={"icon"} />
                       </a>
+                    </div> */}
+
+                    {/* <div class="card1">
+                      <img src={shameem} alt="ceo" class="CardImg" />
+                      <div class="team-detail">
+                        <h3 class="title">Sameem</h3>
+                        <p class="sub-title">Full Stuck Developer</p>
+                      </div>
+                      <a href="#" target="_blank" style={{ cursor: "pointer" }}>
+                        <LinkedInIcon className={"icon"} />
+                      </a>
                     </div>
                   </Col>
                 );
               }
-            })}
+            })} */}
+             
+
+             <Col
+                    className=" about-card mt-3"
+                    sx={{
+                      minHeight: "700px",
+                    }}
+                    md={6}
+                    lg={4}
+                    sm={6}
+                    xs={12}
+                  >
+                    <div class="card1">
+                      <img src={shameem} alt="ceo" class="CardImg" />
+                      <div class="team-detail">
+                        <h3 class="title">Sameem</h3>
+                        <p class="sub-title">Full Stuck Developer</p>
+                      </div>
+                      <a href="#" target="_blank" style={{ cursor: "pointer" }}>
+                        <LinkedInIcon className={"icon"} />
+                      </a>
+                    </div>
+              </Col>
+
+
+              <Col
+                    className=" about-card mt-3"
+                    sx={{
+                      minHeight: "700px",
+                    }}
+                    md={6}
+                    lg={4}
+                    sm={6}
+                    xs={12}
+                  >
+
+                    <div class="card1">
+                      <img src={ashutosh} alt="ceo" class="CardImg" />
+                      <div class="team-detail">
+                        <h3 class="title">Ashutosh</h3>
+                        <p class="sub-title">Product</p>
+                      </div>
+                      <a href="#" target="_blank" style={{ cursor: "pointer" }}>
+                        <LinkedInIcon className={"icon"} />
+                      </a>
+                    </div>
+
+              </Col>
+
+              <Col
+                    className=" about-card mt-3"
+                    sx={{
+                      minHeight: "700px",
+                    }}
+                    md={6}
+                    lg={4}
+                    sm={6}
+                    xs={12}
+                  >
+              
+
+
+                    <div class="card1">
+                      <img src={gauravPro} alt="ceo" class="CardImg" />
+                      <div class="team-detail">
+                        <h3 class="title">Gaurav</h3>
+                        <p class="sub-title">Product</p>
+                      </div>
+                      <a href="#" target="_blank" style={{ cursor: "pointer" }}>
+                        <LinkedInIcon className={"icon"} />
+                      </a>
+                    </div>
+
+                  </Col>
+
+
+                  <Col
+                    className=" about-card mt-3"
+                    sx={{
+                      minHeight: "700px",
+                    }}
+                    md={6}
+                    lg={4}
+                    sm={6}
+                    xs={12}
+                  >
+
+                   {/* rutvij Card */}
+                    <div class="card1">
+                      <img src={rutvij} alt="ceo" class="CardImg" />
+                      <div class="team-detail">
+                        <h3 class="title">Rutvij</h3>
+                        <p class="sub-title">Backend Developer</p>
+                      </div>
+                      <a href="#" target="_blank" style={{ cursor: "pointer" }}>
+                        <LinkedInIcon className={"icon"} />
+                      </a>
+                    </div>
+                    
+
+                  </Col>
+
+                  <Col
+                    className=" about-card mt-3"
+                    sx={{
+                      minHeight: "700px",
+                    }}
+                    md={6}
+                    lg={4}
+                    sm={6}
+                    xs={12}
+                  >
+
+                    
+                    {/* Reesab */}
+                    <div class="card1">
+                      <img src={reesab} alt="ceo" class="CardImg" />
+                      <div class="team-detail">
+                        <h3 class="title">Reesab</h3>
+                        <p class="sub-title">Backend Developer</p>
+                      </div>
+                      <a href="#" target="_blank" style={{ cursor: "pointer" }}>
+                        <LinkedInIcon className={"icon"} />
+                      </a>
+                    </div>
+
+                  </Col>
+
+                {/* Shahbaaz */}
+
+
+                  <Col
+                    className=" about-card mt-3"
+                    sx={{
+                      minHeight: "700px",
+                    }}
+                    md={6}
+                    lg={4}
+                    sm={6}
+                    xs={12}
+                  >
+
+                    
+                    <div class="card1">
+                      <img src={shahbaaz} alt="ceo" class="CardImg" />
+                      <div class="team-detail">
+                        <h3 class="title">Shahbaaz</h3>
+                        <p class="sub-title">Backend Developer</p>
+                      </div>
+                      <a href="#" target="_blank" style={{ cursor: "pointer" }}>
+                        <LinkedInIcon className={"icon"} />
+                      </a>
+                    </div>
+
+                  </Col>
+
+
+
+                  {/* Anipriya */}
+
+                  
+                  <Col
+                    className=" about-card mt-3"
+                    sx={{
+                      minHeight: "700px",
+                    }}
+                    md={6}
+                    lg={4}
+                    sm={6}
+                    xs={12}
+                  >
+
+                    
+                    <div class="card1">
+                      <img src={anupriya} alt="ceo" class="CardImg" />
+                      <div class="team-detail">
+                        <h3 class="title">Anupriya</h3>
+                        <p class="sub-title">Operational</p>
+                      </div>
+                      <a href="#" target="_blank" style={{ cursor: "pointer" }}>
+                        <LinkedInIcon className={"icon"} />
+                      </a>
+                    </div>
+
+                  </Col>
+
+
+                 {/* Gaurav operational */}
+
+                  <Col
+                    className=" about-card mt-3"
+                    sx={{
+                      minHeight: "700px",
+                    }}
+                    md={6}
+                    lg={4}
+                    sm={6}
+                    xs={12}
+                  >
+
+                    
+                    <div class="card1">
+                      <img src={gaurav} alt="ceo" class="CardImg" />
+                      <div class="team-detail">
+                        <h3 class="title">Gaurav</h3>
+                        <p class="sub-title">Operational lead</p>
+                      </div>
+                      <a href="#" target="_blank" style={{ cursor: "pointer" }}>
+                        <LinkedInIcon className={"icon"} />
+                      </a>
+                    </div>
+
+                  </Col>
+
+
+                   {/* Anjali*/}
+
+                   <Col
+                    className=" about-card mt-3"
+                    sx={{
+                      minHeight: "700px",
+                    }}
+                    md={6}
+                    lg={4}
+                    sm={6}
+                    xs={12}
+                  >
+
+                    
+                    <div class="card1">
+                      <img src={anjali} alt="ceo" class="CardImg" />
+                      <div class="team-detail">
+                        <h3 class="title">Anjali</h3>
+                        <p class="sub-title">Operational</p>
+                      </div>
+                      <a href="#" target="_blank" style={{ cursor: "pointer" }}>
+                        <LinkedInIcon className={"icon"} />
+                      </a>
+                    </div>
+
+                  </Col>
+
+
+                  {/* shiraz*/}
+
+                  <Col
+                    className=" about-card mt-3"
+                    sx={{
+                      minHeight: "700px",
+                    }}
+                    md={6}
+                    lg={4}
+                    sm={6}
+                    xs={12}
+                  >
+
+                    
+                    <div class="card1">
+                      <img src={shiraz} alt="ceo" class="CardImg" />
+                      <div class="team-detail">
+                        <h3 class="title">Shiraz</h3>
+                        <p class="sub-title">Operational</p>
+                      </div>
+                      <a href="#" target="_blank" style={{ cursor: "pointer" }}>
+                        <LinkedInIcon className={"icon"} />
+                      </a>
+                    </div>
+
+                  </Col>
+                
+               {/* Yogesh*/}
+
+                  <Col
+                    className=" about-card mt-3"
+                    sx={{
+                      minHeight: "700px",
+                    }}
+                    md={6}
+                    lg={4}
+                    sm={6}
+                    xs={12}
+                  >
+
+                    
+                    <div class="card1">
+                      <img src={yogesh} alt="ceo" class="CardImg" />
+                      <div class="team-detail">
+                        <h3 class="title">Yogesh</h3>
+                        <p class="sub-title">Operational</p>
+                      </div>
+                      <a href="#" target="_blank" style={{ cursor: "pointer" }}>
+                        <LinkedInIcon className={"icon"} />
+                      </a>
+                    </div>
+
+                  </Col>
+              
+              {/* Siddharth */}
+                  <Col
+                    className=" about-card mt-3"
+                    sx={{
+                      minHeight: "700px",
+                    }}
+                    md={6}
+                    lg={4}
+                    sm={6}
+                    xs={12}
+                  >
+
+                    
+                    <div class="card1">
+                      <img src={sidhdarth} alt="ceo" class="CardImg" />
+                      <div class="team-detail">
+                        <h3 class="title">Siddharth</h3>
+                        <p class="sub-title">Business</p>
+                      </div>
+                      <a href="#" target="_blank" style={{ cursor: "pointer" }}>
+                        <LinkedInIcon className={"icon"} />
+                      </a>
+                    </div>
+
+                  </Col>
+
+
           </Row>
         </Container>
       </>
