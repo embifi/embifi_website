@@ -1,17 +1,29 @@
 {
   "files": {
-    "main.css": "/embifiwebsite/static/css/main.6acb683c.css",
-    "main.js": "/embifiwebsite/static/js/main.1e69e025.js",
+    "main.css": "/embifiwebsite/static/css/main.6cab89a9.css",
+    "main.js": "/embifiwebsite/static/js/main.30e6ddf8.js",
     "static/media/final_1.gif": "/embifiwebsite/static/media/final_1.b327bf2bb0c75a06d331.gif",
     "static/media/products.svg": "/embifiwebsite/static/media/products.53eaa457f30645e5f5d985746760a81e.svg",
     "static/media/aboutus-img-1.svg": "/embifiwebsite/static/media/aboutus-img-1.21d32545cca8d2ecaa5c6b95cb78a92e.svg",
     "static/media/aboutus-img-3.svg": "/embifiwebsite/static/media/aboutus-img-3.c79b9d68c4a7d9a18e6dfc7bdd07ea97.svg",
     "static/media/aboutus-img-4.svg": "/embifiwebsite/static/media/aboutus-img-4.c4ed9895acd9435dd8a06ef3be6565f6.svg",
     "static/media/box.svg": "/embifiwebsite/static/media/box.1a2d880cf45055df8b38c033f2562935.svg",
+    "static/media/sameem.gif": "/embifiwebsite/static/media/sameem.73a583c6e3c1776f3416.gif",
     "static/media/Man-1.svg": "/embifiwebsite/static/media/Man-1.5b9387c8153ee608efa87d8afc770245.svg",
     "static/media/aboutus-img-2.svg": "/embifiwebsite/static/media/aboutus-img-2.d6e39e4bfc71f82488cec6d58519f3a1.svg",
     "static/media/Man-2.svg": "/embifiwebsite/static/media/Man-2.2bab944862c0c2aa8158c88c9c518271.svg",
     "static/media/teamdp.gif": "/embifiwebsite/static/media/teamdp.6fd67720a47384f68d3c.gif",
+    "static/media/Rutvij.gif": "/embifiwebsite/static/media/Rutvij.113516aaa65f838de7e7.gif",
+    "static/media/gauravPra.gif": "/embifiwebsite/static/media/gauravPra.05335ebfda8183a5f9a0.gif",
+    "static/media/ashutosh.gif": "/embifiwebsite/static/media/ashutosh.1b1164369336c27d0ced.gif",
+    "static/media/sidhdarth.gif": "/embifiwebsite/static/media/sidhdarth.3797eb56b74970b4a2bc.gif",
+    "static/media/Yogesh.gif": "/embifiwebsite/static/media/Yogesh.9733547b2ade85bb590e.gif",
+    "static/media/gauravProduct.gif": "/embifiwebsite/static/media/gauravProduct.44b2071a86a0eb966ef8.gif",
+    "static/media/Anupriya.gif": "/embifiwebsite/static/media/Anupriya.233316e9a310bb7fd3a2.gif",
+    "static/media/Reesab.gif": "/embifiwebsite/static/media/Reesab.4451de7d08dc98ecf0b8.gif",
+    "static/media/Anjali.gif": "/embifiwebsite/static/media/Anjali.72ebedd12209aef0c61a.gif",
+    "static/media/shahbaz.gif": "/embifiwebsite/static/media/shahbaz.468d7e3004c8e17b6235.gif",
+    "static/media/shiraz.gif": "/embifiwebsite/static/media/shiraz.f3b1bafa7cc3a312b434.gif",
     "static/media/credit.gif": "/embifiwebsite/static/media/credit.4de8f02a492636ab971f.gif",
     "static/media/loginsideimg.jpg": "/embifiwebsite/static/media/loginsideimg.7cfce53aa568ba0118ff.jpg",
     "static/media/intro-bg.svg": "/embifiwebsite/static/media/intro-bg.33c39cdee08c85f906f35c36e3bc125e.svg",
@@ -27,11 +39,11 @@
     "index.html": "/embifiwebsite/index.html",
     "static/media/Avatar.svg": "/embifiwebsite/static/media/Avatar.de7d896764ff4e99625930bd6d435b58.svg",
     "static/media/user.svg": "/embifiwebsite/static/media/user.81fbbe39e1e80c69b9548d931637bd8c.svg",
-    "main.6acb683c.css.map": "/embifiwebsite/static/css/main.6acb683c.css.map",
-    "main.1e69e025.js.map": "/embifiwebsite/static/js/main.1e69e025.js.map"
+    "main.6cab89a9.css.map": "/embifiwebsite/static/css/main.6cab89a9.css.map",
+    "main.30e6ddf8.js.map": "/embifiwebsite/static/js/main.30e6ddf8.js.map"
   },
   "entrypoints": [
-    "static/css/main.6acb683c.css",
-    "static/js/main.1e69e025.js"
+    "static/css/main.6cab89a9.css",
+    "static/js/main.30e6ddf8.js"
   ]
 }
