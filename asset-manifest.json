@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/embifiwebsite/static/css/main.6cab89a9.css",
+    "main.css": "/embifiwebsite/static/css/main.2ec30eae.css",
     "main.js": "/embifiwebsite/static/js/main.30e6ddf8.js",
     "static/media/final_1.gif": "/embifiwebsite/static/media/final_1.b327bf2bb0c75a06d331.gif",
     "static/media/products.svg": "/embifiwebsite/static/media/products.53eaa457f30645e5f5d985746760a81e.svg",
@@ -39,11 +39,11 @@
     "index.html": "/embifiwebsite/index.html",
     "static/media/Avatar.svg": "/embifiwebsite/static/media/Avatar.de7d896764ff4e99625930bd6d435b58.svg",
     "static/media/user.svg": "/embifiwebsite/static/media/user.81fbbe39e1e80c69b9548d931637bd8c.svg",
-    "main.6cab89a9.css.map": "/embifiwebsite/static/css/main.6cab89a9.css.map",
+    "main.2ec30eae.css.map": "/embifiwebsite/static/css/main.2ec30eae.css.map",
     "main.30e6ddf8.js.map": "/embifiwebsite/static/js/main.30e6ddf8.js.map"
   },
   "entrypoints": [
-    "static/css/main.6cab89a9.css",
+    "static/css/main.2ec30eae.css",
     "static/js/main.30e6ddf8.js"
   ]
 }
