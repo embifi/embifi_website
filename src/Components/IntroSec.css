@@ -19,7 +19,13 @@
 body{
     overflow-x: hidden;
 }
-
+@media (max-width: 449px) {
+  body{
+    overflow-x: hidden;
+  }
+ 
+  
+}
 
 .floating-bg{
     height: 150vw;
@@ -176,8 +182,112 @@ body{
   top: 0;
 
  }
+
+ @keyframes move {
+
+  0% {
+      background-position: 0px;
+  }
+  100% {
+      background-position: 2000px;
+  }
+}
+
+
  .gifImage{
   position: absolute;
-  bottom: 0;
-   opacity: 0.6;
+  width: 500%;
+  bottom: 185px;
+   opacity: 1;
+   transform: translate(-150px);
+   z-index: 1;
+   animation: move 10s linear infinite;
+ }
+
+
+ .wheel{
+  position: absolute;
+  bottom: 150px;
+  left: 8%;
+  animation: rotate 1s linear infinite;
+  
+ }
+
+ .wheel1{
+  position: absolute;
+  bottom: 150px;
+  left: -8.5%;
+  animation: rotate 1s linear infinite;
+ }
+ .bg{
+  width: 120%;
+  /* left:0%; */
+  /* right: 0%; */
+  bottom: -10px;
+  position: absolute;
+  animation: move 5s linear infinite;
+  
+ }
+#group{
+  position: absolute;
+width: 113.12px;
+height: 101.85px;
+left: 1277px;
+top: 66.49px;
+}
+
+
+ @media (max-width:632px) {
+  .gifImage{
+    position: absolute;
+    bottom: 0;
+     opacity: 1;
+     width: -120%;
+     height: 30%;
+   }
+   .bg{
+    .bg{
+      width: 90%;
+      position: absolute;
+      bottom: -30px;
+     }
+
+   }
+  
+ }
+
+ @media (max-width:380px) {
+  .bg{
+    width: 103%;
+    position: absolute;
+    bottom: -10px;
+  }
+  .gifImage{
+    position: absolute;
+    bottom: 50px;
+     opacity: 1;
+     z-index: 1000;
+     width: 10%;
+     height: 7.5%;
+   }
+   .wheel{
+    position: absolute;
+    width: 100%;
+    height: 2vw;
+    bottom: 30px;
+    left: 15px;
+    animation: rotate 1s linear infinite;
+    
+   }
+  
+   .wheel1{
+    position: absolute;
+    width: 100%;
+    height: 2vw;
+    bottom: 30px;
+    left: 15px;
+    animation: rotate 1s linear infinite;
+   }
+  
+  
  }
